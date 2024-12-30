@@ -36,7 +36,7 @@ st.divider()
 #Inputs
 avatar_options = ["🦁", "⚖️", "🍎", "🦉", "🗽" ]
 topic_options = ["Artificial_Intelligence", "Climate", "Digital_Assets"]
-model_options = ["gpt-3.5-turbo", "gpt-4o-mini", "gpt-4o"]
+model_options = ["gpt-3.5-turbo", "gpt-4o-mini", "gpt-4o", "o1"]
 
 col1, col2 = st.columns(2)
 
@@ -61,6 +61,7 @@ with col2:
             "Older",
             "Fast, cheap",
             "Robust, pricier",
+            "New, deeper reasoning",
         ],
         index=model_options.index(st.session_state["model_choice"]),
         disabled=True
